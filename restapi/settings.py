@@ -90,7 +90,7 @@ DATABASES = {
 
 DATABASES = {
     'default': {
-        'ENGINE': 'mssql',
+        'ENGINE': 'sql_server.pyodbc', 
         'NAME': os.getenv('DBNAME'),  # Your database name
         'HOST': os.getenv('DBHOST'),  # Your server name
         'PORT': '1433',

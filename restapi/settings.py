@@ -90,17 +90,18 @@ DATABASES = {
 
 DATABASES = {
     'default': {
-        'ENGINE': 'sql_server.pyodbc', 
-        'NAME': os.getenv('DBNAME'),  # Your database name
-        'HOST': os.getenv('DBHOST'),  # Your server name
-        'PORT': '1433',
-        'USER': os.getenv('DBUSER'),  # Your Azure SQL admin user
-        'PASSWORD': os.getenv('DBPASS'),  # Your database password
+        'ENGINE': 'sql_server.pyodbc',
+        'NAME': os.getenv('DBNAME'),
+        'USER': os.getenv('DBUSER'),
+        'PASSWORD': os.getenv('DBPASS'),
+        'HOST': os.getenv('DBHOST'),
+        'PORT': '1433',  # Default SQL Server port
         'OPTIONS': {
             'driver': 'ODBC Driver 17 for SQL Server',
         },
     }
 }
+
 
 
 
